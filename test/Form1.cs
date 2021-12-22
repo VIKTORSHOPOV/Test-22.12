@@ -13,7 +13,7 @@ namespace test
 {
     public partial class Form1 : Form
     {
-        static int br = 0;
+        //static int br = 0;
         Order[] orders = new Order[100];
         public Form1()
         {
@@ -68,8 +68,8 @@ namespace test
                 PriceShipping = double.Parse(txtPriceShipping.Text)
 
             };
-            orders[br] = newOrder;
-            br++;
+            orders[int.Parse(txtNumber.Text) - 1] = newOrder;
+            //br++;
         }
     }
 }
